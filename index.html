@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Ui</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20,300,0,0" />
+</head>
+<body>
+
+
+    <transparent>
+        <window id="window-test" class="dialog" data-flip-id="animate" style="min-height:400px">
+            <toolbar onclick="toggleWindow()"></toolbar>
+            <section>
+                <h1>Dialogo</h1>
+                <p>Los dialogos en los sistemas de diseño de interfaces son unos elementos creados para mostrar información y ejecutar acciones</p>
+            </section>
+        </window>
+    </transparent>
+
+    <main>
+        <sidebar>
+            <toolbar></toolbar>
+            <h1>Menu</h1>
+            <selector onclick="toggleSection('#section-start')" class="active ripple_effect"><span class="material-symbols-rounded">home</span>Inicio</selector>
+            <selector onclick="toggleSection('#section-favorites')" class="ripple_effect"><span class="material-symbols-rounded">grade</span>Favoritos</selector>
+            <selector onclick="toggleSection('#section-settings')" class="ripple_effect"><span class="material-symbols-rounded">settings</span>Ajustes</selector>
+        </sidebar>
+        <holder>
+            <toolbar><button data-flip-id="animate" onclick="toggleWindow('#window-test')" class="ripple_effect">Save</button></toolbar>
+
+            <section class="active" id="section-start">
+                <h1>Inicio</h1>
+                <div class="content_box invisible">
+                    <div class="content_box small">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi doloribus assumenda perferendis. Iusto eius esse accusamus soluta obcaecati. Nesciunt tempora optio accusamus quaerat provident voluptates error nulla molestiae voluptas odio?</p>
+                    </div>
+                    <div class="content_box small">
+                    
+                    </div>
+                   
+                </div>
+                <button>Save</button>
+            </section>
+            <section id="section-favorites">
+                <h1>Favoritos</h1>
+                <div class="content_box invisible">
+                    <div class="content_box small">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi doloribus assumenda perferendis. Iusto eius esse accusamus soluta obcaecati. Nesciunt tempora optio accusamus quaerat provident voluptates error nulla molestiae voluptas odio?</p>
+                    </div>
+                    <div class="content_box small">
+                    
+                    </div>
+                   
+                </div>
+                <button>Guardar Favoritos</button>
+            </section>
+            <section id="section-settings">
+                <h1>Ajustes</h1>
+
+            </section>
+           
+        </holder>
+    </main>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/Flip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/CustomEase.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="functions.js"></script>
+</body>
+</html>
