@@ -9,6 +9,8 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20,300,0,0" />
+    <link rel="shorcut icon" type="image" href="resources/icon.png">
+    
 </head>
 <body>
 
@@ -35,17 +37,27 @@
             <toolbar><button data-flip-id="animate" onclick="toggleWindow('#window-test')" class="ripple_effect">Save</button></toolbar>
 
             <section class="active" id="section-start">
-                <h1>Inicio</h1>
+                <div class="content_box"><h1 class="large">Mis proyectos</h1></div>
+                
                 <div class="content_box invisible">
                     <div class="content_box small">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi doloribus assumenda perferendis. Iusto eius esse accusamus soluta obcaecati. Nesciunt tempora optio accusamus quaerat provident voluptates error nulla molestiae voluptas odio?</p>
+                        <h1>Cut Control</h1>
+                        <img src="resources/845shots_so.png" style="margin-top:16px;width:100%; height: auto; object-fit: cover; border-radius:16px">
                     </div>
-                    <div class="content_box small">
+                    <div class="content_box small" style="max-width:30%">
+                        <h2>¿Qué es?</h2>
+                        <p>
+                            Cut Control es un sistema de software diseñado para proporcionar una gestión integral y eficiente de peluquerías, permitiendo un almacenamiento exhaustivo de datos con el fin de optimizar todos los aspectos del negocio.
+                        </p>  
+                        <h2>Objetivo principal</h2>
+                        <p>
+                            El objetivo principal de Cut Control radica en mejorar la eficiencia operativa de las peluquerías, brindando a los propietarios y administradores una plataforma centralizada para registrar y acceder a una amplia gama de datos relacionados con la gestión del establecimiento.
+                        </p>
+                        <a class="type-1 ripple_effect" href="https://parkit.com.mx/cutcontrol" target="_blank">Visitar Cut Control</a>
+                    </div>
                     
-                    </div>
                    
                 </div>
-                <button>Save</button>
             </section>
             <section id="section-favorites">
                 <h1>Favoritos</h1>
